@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d35tpb2meax2f"
+path="res://.godot/imported/marche alien.wav-da535cad92c8b461a1c1817f69e1ff5d.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/marche alien.wav"
+dest_files=["res://.godot/imported/marche alien.wav-da535cad92c8b461a1c1817f69e1ff5d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

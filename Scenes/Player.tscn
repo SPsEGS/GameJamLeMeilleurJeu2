@@ -20,3 +20,5 @@ enabled = false
 limit_left = 0
 limit_bottom = 3200
 position_smoothing_enabled = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]

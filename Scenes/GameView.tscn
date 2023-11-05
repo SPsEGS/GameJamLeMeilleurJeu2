@@ -24,7 +24,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(958, 1080)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="ParallaxBackground" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_5u603")]
@@ -44,7 +44,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer2"]
 handle_input_locally = false
-size = Vector2i(958, 1080)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="ParallaxBackground" parent="HBoxContainer/SubViewportContainer2/SubViewport" instance=ExtResource("3_5u603")]

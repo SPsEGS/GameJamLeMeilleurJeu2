@@ -42,6 +42,10 @@ func move(delta) :
 	move_and_slide()
 	if(is_on_floor()):
 		has_jumped = false
+		
+	print(direction != 0, is_on_floor(), !$AudioStreamPlayer2D.playing)
+	if (direction != 0 && is_on_floor() && !$AudioStreamPlayer2D.playing):
+		$AudioStreamPlayer2D.play()
 
 
 func jump():
