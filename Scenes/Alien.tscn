@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk5cwt3kdigr7"]
+[gd_scene load_steps=5 format=3 uid="uid://bk5cwt3kdigr7"]
 
 [ext_resource type="PackedScene" uid="uid://u5xexd2ip3w6" path="res://Scenes/Player.tscn" id="1_eucf8"]
 [ext_resource type="Script" path="res://Scripts/Alien.gd" id="2_nrh6b"]
+[ext_resource type="Texture2D" uid="uid://dtjsfhy1b4d65" path="res://Assets/Characters/Alien/Alien design .PNG" id="3_upkua"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvi47"]
+size = Vector2(125.925, 166.02)
 
 [node name="Alien" instance=ExtResource("1_eucf8")]
 script = ExtResource("2_nrh6b")
@@ -9,6 +13,17 @@ grapple_max_distance = 10000
 grapple_reaction_strength = 1000.0
 grapple_reel_speed = 5.0
 drag = 7.0
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("3_upkua")
+offset = Vector2(-41.53, -213.305)
+hframes = 2
+vframes = 2
+region_rect = Rect2(420, 481.3, 905.661, 983)
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("RectangleShape2D_rvi47")
 
 [node name="GrappleRaycast" type="RayCast2D" parent="." index="3"]
 target_position = Vector2(0, 0)

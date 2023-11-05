@@ -24,8 +24,3 @@ func _ready() -> void:
 		remote_transform.remote_path = node.camera.get_path()
 		print(remote_transform, "test2")
 		node.player.add_child(remote_transform)
-
-
-
-
-

@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://cevrp1jb8acus"]
+
+[ext_resource type="Script" path="res://Scripts/ChampiDoor.gd" id="1_7o0wh"]
+[ext_resource type="Texture2D" uid="uid://bqtfa4ca2l7qp" path="res://Assets/ChampiDoor/ChampiDoor_05.png" id="1_81h5d"]
+[ext_resource type="Texture2D" uid="uid://isjhorrek4pq" path="res://Assets/ChampiDoor/ChampiDoor_01.png" id="2_lo1d0"]
+[ext_resource type="Texture2D" uid="uid://btdieh18tqiu" path="res://Assets/ChampiDoor/ChampiDoor_02.png" id="3_i4onx"]
+[ext_resource type="Texture2D" uid="uid://c8nn6kb6mkjoy" path="res://Assets/ChampiDoor/ChampiDoor_03.png" id="4_l0ges"]
+[ext_resource type="Texture2D" uid="uid://de40hbs0kt0pn" path="res://Assets/ChampiDoor/ChampiDoor_04.png" id="5_wsh42"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yx7c4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lo1d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i4onx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l0ges")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wsh42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_81h5d")
+}],
+"loop": false,
+"name": &"Open",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5yi2"]
+size = Vector2(165.74, 701.78)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g7uwn"]
+size = Vector2(165.74, 178.275)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d46uw"]
+size = Vector2(60, 150)
+
+[node name="ChampiDoor" type="StaticBody2D"]
+script = ExtResource("1_7o0wh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_yx7c4")
+animation = &"Open"
+offset = Vector2(146.945, -312.92)
+
+[node name="FrameCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-46.59, -359.105)
+shape = SubResource("RectangleShape2D_a5yi2")
+
+[node name="DoorCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-46.59, 81.925)
+shape = SubResource("RectangleShape2D_g7uwn")
+
+[node name="EndTriggger" type="Area2D" parent="."]
+
+[node name="EndCollision" type="CollisionShape2D" parent="EndTriggger"]
+position = Vector2(12, 96)
+shape = SubResource("RectangleShape2D_d46uw")
+
+[connection signal="body_entered" from="EndTriggger" to="." method="_on_end_triggger_body_entered"]
