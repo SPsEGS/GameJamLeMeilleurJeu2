@@ -81,3 +81,11 @@ func grapple_move(delta: float):
 	velocity += pull_vector * delta
 	velocity.y += gravity * delta
 	move_and_slide()
+	
+func ded():
+	position.x = 7200
+	position.y = 2500
+	
+	
+	
+	

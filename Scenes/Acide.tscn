@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://dgvo580rln3m2"]
+
+[ext_resource type="Texture2D" uid="uid://t3nbfk2utyq5" path="res://Assets/compo acide/4animation bain acide/Sans_animation bain d_acide00000.png" id="1_60uff"]
+[ext_resource type="Script" path="res://Scripts/Acide.gd" id="1_dwnod"]
+[ext_resource type="Texture2D" uid="uid://dbrmgr4bkjyf3" path="res://Assets/compo acide/4animation bain acide/Sans_animation bain d_acide00001.png" id="2_wgv15"]
+[ext_resource type="Texture2D" uid="uid://c5r7agdlp0rop" path="res://Assets/compo acide/4animation bain acide/Sans_animation bain d_acide00002.png" id="3_xlhcp"]
+[ext_resource type="Texture2D" uid="uid://bxhrp028oxm63" path="res://Assets/compo acide/4animation bain acide/Sans_animation bain d_acide00003.png" id="4_ua5wb"]
+[ext_resource type="Texture2D" uid="uid://cttkiwjs2ranx" path="res://Assets/compo acide/4animation bain acide/Sans_animation bain d_acide00004.png" id="5_mjymg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g0jdq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_60uff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wgv15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xlhcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ua5wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mjymg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a1gh3"]
+size = Vector2(402, 133)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_dwnod")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(302, -177)
+sprite_frames = SubResource("SpriteFrames_g0jdq")
+frame_progress = 0.580697
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(190, 123.5)
+shape = SubResource("RectangleShape2D_a1gh3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

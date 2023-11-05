@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bx8mol0ux0cxj"]
+[gd_scene load_steps=28 format=3 uid="uid://bx8mol0ux0cxj"]
 
 [ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="1_8l23y"]
 [ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="2_cfeps"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://bpd0t4i6wdyhv" path="res://Assets/animation maison champi/maison champi_Clip_001.png" id="23_is1em"]
 [ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="25_e3i75"]
 [ext_resource type="PackedScene" uid="uid://depg4v841sh1x" path="res://Scenes/Sounds/Harmo2.tscn" id="26_nk4kj"]
+[ext_resource type="PackedScene" uid="uid://dgvo580rln3m2" path="res://Scenes/Acide.tscn" id="27_3w25h"]
 
 [node name="Level1" type="Node2D"]
 
@@ -336,3 +337,6 @@ scale = Vector2(1, 17.18)
 [node name="Area2D5" parent="." instance=ExtResource("26_nk4kj")]
 position = Vector2(20374, 3071)
 scale = Vector2(1, 4.52)
+
+[node name="Area2D6" parent="." instance=ExtResource("27_3w25h")]
+position = Vector2(7850, 2905)
