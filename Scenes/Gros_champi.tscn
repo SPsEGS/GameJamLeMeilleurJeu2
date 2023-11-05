@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqatknae6grwl"]
+[gd_scene load_steps=9 format=3 uid="uid://bqatknae6grwl"]
 
 [ext_resource type="Script" path="res://Scripts/gros_champi.gd" id="1_xv42h"]
 [ext_resource type="Texture2D" uid="uid://be2o6b7uq3ycw" path="res://Assets/Champignons séparés/champi gros lumière_redim.png" id="2_14ub6"]
+[ext_resource type="Texture2D" uid="uid://duc6r40584u8l" path="res://Assets/Textures/Lights/PointLight_neutral.webp" id="3_o5hto"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f52og"]
 size = Vector2(152, 153)
@@ -21,8 +22,42 @@ tracks/0/keys = {
 "values": [true, false, true]
 }
 
+[sub_resource type="Animation" id="Animation_qynuu"]
+resource_name = "Light_on"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_06h3v"]
+resource_name = "Light_off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6yhmn"]
 _data = {
+"Light_off": SubResource("Animation_06h3v"),
+"Light_on": SubResource("Animation_qynuu"),
 "flash": SubResource("Animation_inmiv")
 }
 
@@ -42,6 +77,11 @@ shape = SubResource("RectangleShape2D_f52og")
 libraries = {
 "": SubResource("AnimationLibrary_6yhmn")
 }
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+energy = 0.0
+texture = ExtResource("3_o5hto")
+texture_scale = 6.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
