@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmdq3j51y0v1b"]
+
+[ext_resource type="PackedScene" uid="uid://dxww3htj70b5o" path="res://Scenes/Environment/Wall.tscn" id="1_1hnfn"]
+[ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="1_tq0vx"]
+[ext_resource type="Texture2D" uid="uid://duc6r40584u8l" path="res://Assets/Textures/Lights/PointLight_neutral.webp" id="2_favqo"]
+[ext_resource type="PackedScene" uid="uid://c3oommgjqix5" path="res://Scenes/Environment/Floor.tscn" id="3_454ly"]
+[ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="5_imjqm"]
+
+[node name="LightTestScene" type="Node2D"]
+
+[node name="Human" parent="." instance=ExtResource("1_tq0vx")]
+position = Vector2(320, 704)
+speed = 80000.0
+metadata/_edit_group_ = true
+
+[node name="PointLight2D" type="PointLight2D" parent="Human"]
+position = Vector2(3, -9)
+shadow_enabled = true
+texture = ExtResource("2_favqo")
+texture_scale = 4.55
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Wall2" parent="Level" instance=ExtResource("1_1hnfn")]
+position = Vector2(64, 960)
+
+[node name="Wall" parent="Level" instance=ExtResource("1_1hnfn")]
+position = Vector2(64, 320)
+
+[node name="Floor" parent="Level" instance=ExtResource("3_454ly")]
+position = Vector2(448, 1216)
+
+[node name="Floor2" parent="Level" instance=ExtResource("3_454ly")]
+position = Vector2(1088, 1216)
+
+[node name="Floor4" parent="Level" instance=ExtResource("3_454ly")]
+position = Vector2(832, 832)
+
+[node name="Floor3" parent="Level" instance=ExtResource("3_454ly")]
+position = Vector2(1728, 1216)
+
+[node name="Lights" type="Node2D" parent="."]
+position = Vector2(448, 1216)
+scale = Vector2(5, 1)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Lights"]
+color = Color(0.0745098, 0.0745098, 0.0745098, 1)
+
+[node name="Alien" parent="." instance=ExtResource("5_imjqm")]
+position = Vector2(458, 696)
+metadata/_edit_group_ = true
+
+[node name="PointLight2D" type="PointLight2D" parent="Alien"]
+position = Vector2(3, -9)
+shadow_enabled = true
+texture = ExtResource("2_favqo")
+texture_scale = 4.55

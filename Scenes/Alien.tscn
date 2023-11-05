@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk5cwt3kdigr7"]
+
+[ext_resource type="PackedScene" uid="uid://u5xexd2ip3w6" path="res://Scenes/Player.tscn" id="1_eucf8"]
+[ext_resource type="Script" path="res://Scripts/Alien.gd" id="2_nrh6b"]
+
+[node name="Alien" instance=ExtResource("1_eucf8")]
+script = ExtResource("2_nrh6b")
+grapple_max_distance = 10000
+grapple_reaction_strength = 1000.0
+grapple_reel_speed = 5.0
+drag = 7.0
+
+[node name="GrappleRaycast" type="RayCast2D" parent="." index="3"]
+target_position = Vector2(0, 0)
+
+[node name="GrappleLine" type="Line2D" parent="." index="4"]

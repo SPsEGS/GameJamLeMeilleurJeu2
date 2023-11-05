@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=3 uid="uid://dlbw67oxmpdvx"]
+
+[ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="1_kgbgo"]
+[ext_resource type="PackedScene" uid="uid://dxww3htj70b5o" path="res://Scenes/Environment/Wall.tscn" id="2_4lqbp"]
+[ext_resource type="PackedScene" uid="uid://cqoi6d4l3w2dl" path="res://Scenes/Environment/Ceiling.tscn" id="3_cghvi"]
+[ext_resource type="PackedScene" uid="uid://c3oommgjqix5" path="res://Scenes/Environment/Floor.tscn" id="4_ri4jy"]
+[ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="5_yromd"]
+[ext_resource type="PackedScene" uid="uid://mqgijtj8svds" path="res://Scenes/Environment/Platform.tscn" id="6_r1rir"]
+[ext_resource type="PackedScene" uid="uid://cd00ekufkeovm" path="res://Scenes/Environment/Ground.tscn" id="7_k18jb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Wall" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(71, 318)
+
+[node name="Wall3" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(71, 959)
+
+[node name="Wall4" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(71, 1600)
+
+[node name="Wall5" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(71, 2241)
+
+[node name="Wall6" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(765, 318)
+
+[node name="Wall7" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(765, 959)
+
+[node name="Wall8" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(765, 1600)
+
+[node name="Wall9" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(765, 2241)
+
+[node name="Wall10" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(71, 2880)
+
+[node name="Ceiling" parent="Level" instance=ExtResource("3_cghvi")]
+position = Vector2(1156, 2495)
+
+[node name="Ceiling2" parent="Level" instance=ExtResource("3_cghvi")]
+position = Vector2(1803, 2495)
+
+[node name="Ceiling3" parent="Level" instance=ExtResource("3_cghvi")]
+position = Vector2(2445, 2495)
+
+[node name="Ramp" parent="Level" instance=ExtResource("3_cghvi")]
+position = Vector2(2948, 3018)
+rotation = -0.47822
+
+[node name="Ramp2" parent="Level" instance=ExtResource("4_ri4jy")]
+position = Vector2(3517, 2722)
+rotation = -0.47822
+
+[node name="Ramp3" parent="Level" instance=ExtResource("4_ri4jy")]
+position = Vector2(4086, 2427)
+rotation = -0.47822
+
+[node name="Wall11" parent="Level" instance=ExtResource("2_4lqbp")]
+position = Vector2(2701, 2107)
+
+[node name="Floor" parent="Level" instance=ExtResource("3_cghvi")]
+position = Vector2(2949, 1707)
+
+[node name="Platform" parent="Level" instance=ExtResource("6_r1rir")]
+position = Vector2(1873, 2975)
+scale = Vector2(0.611221, 0.528407)
+
+[node name="Platform2" parent="Level" instance=ExtResource("6_r1rir")]
+position = Vector2(4992, 2615)
+
+[node name="Ground" parent="Level" instance=ExtResource("7_k18jb")]
+position = Vector2(1439, 3157)
+
+[node name="Human" parent="." instance=ExtResource("1_kgbgo")]
+position = Vector2(517, 303)
+
+[node name="Alien" parent="." instance=ExtResource("5_yromd")]
+position = Vector2(282, 296)

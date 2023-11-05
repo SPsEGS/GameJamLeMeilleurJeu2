@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4fxw16tg4udn"]
+
+[ext_resource type="PackedScene" uid="uid://dxww3htj70b5o" path="res://Scenes/Environment/Wall.tscn" id="1_fxexo"]
+
+[node name="Area2D" instance=ExtResource("1_fxexo")]
