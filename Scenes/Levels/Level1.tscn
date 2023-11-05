@@ -1,5 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://bx8mol0ux0cxj"]
+[gd_scene load_steps=55 format=3 uid="uid://bx8mol0ux0cxj"]
 
+[ext_resource type="Texture2D" uid="uid://d3v8iyxxhkjj5" path="res://Assets/mosaique decors 1.png" id="1_6fj87"]
 [ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="1_8l23y"]
 [ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="2_cfeps"]
 [ext_resource type="TileSet" uid="uid://ceggqrj1fluc8" path="res://Scenes/Environment/TileSet.tres" id="3_nqdwy"]
@@ -27,8 +28,47 @@
 [ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="25_e3i75"]
 [ext_resource type="PackedScene" uid="uid://depg4v841sh1x" path="res://Scenes/Sounds/Harmo2.tscn" id="26_nk4kj"]
 [ext_resource type="PackedScene" uid="uid://dgvo580rln3m2" path="res://Scenes/Acide.tscn" id="27_3w25h"]
+[ext_resource type="PackedScene" uid="uid://ndx7tb66mqpd" path="res://Scenes/Interactables/Pressure_plate.tscn" id="24_bl562"]
+[ext_resource type="PackedScene" uid="uid://dnvrm7xwf4ivc" path="res://Scenes/Interactables/Button.tscn" id="25_o536w"]
+[ext_resource type="PackedScene" uid="uid://cevrp1jb8acus" path="res://Scenes/Interactables/ChampiDoor.tscn" id="26_aainl"]
+[ext_resource type="Texture2D" uid="uid://b5357j106sve7" path="res://Assets/tout les champignon séparé/champi00003.png" id="28_xrh0h"]
+[ext_resource type="Texture2D" uid="uid://8imcwv1xokxm" path="res://Assets/tout les champignon séparé/champi00004.png" id="29_ntxwt"]
+[ext_resource type="Texture2D" uid="uid://bv1wmpawax6mf" path="res://Assets/tout les champignon séparé/champi00001.png" id="30_kc8ex"]
+[ext_resource type="Texture2D" uid="uid://dwnhprn5eotvi" path="res://Assets/tout les champignon séparé/champi00002.png" id="31_rqrd0"]
+[ext_resource type="Texture2D" uid="uid://cl1mee0gv0w7" path="res://Assets/tout les champignon séparé/champi00005.png" id="32_dkl7t"]
+[ext_resource type="Texture2D" uid="uid://cyc5snbvdkqso" path="res://Assets/tout les champignon séparé/champi00006.png" id="33_1kfse"]
+[ext_resource type="Texture2D" uid="uid://c6phbgm7nmd5l" path="res://Assets/tout les champignon séparé/champi00007.png" id="34_ye0kx"]
+[ext_resource type="Texture2D" uid="uid://bhdt8uxi4tdkl" path="res://Assets/tout les champignon séparé/champi08.png" id="35_mebub"]
+[ext_resource type="Texture2D" uid="uid://bgogemhuboeb7" path="res://Assets/tout les champignon séparé/champi00015.png" id="36_22mro"]
+[ext_resource type="Texture2D" uid="uid://dbmd2jw42iu66" path="res://Assets/tout les champignon séparé/champi00016.png" id="37_itbc3"]
+[ext_resource type="Texture2D" uid="uid://boxy6c7sixqkp" path="res://Assets/tout les champignon séparé/champi00017.png" id="38_2hnuh"]
+[ext_resource type="Texture2D" uid="uid://bmwkwg6p10wd5" path="res://Assets/tout les champignon séparé/champi00018.png" id="39_5l23r"]
+[ext_resource type="Texture2D" uid="uid://b17ayxrdlcu6" path="res://Assets/tout les champignon séparé/champi00019.png" id="40_jn7m3"]
+[ext_resource type="Texture2D" uid="uid://mgbfs4i7i2we" path="res://Assets/tout les champignon séparé/champi00031.png" id="41_rsjfa"]
+[ext_resource type="Texture2D" uid="uid://lf8w6kd4qgsc" path="res://Assets/tout les champignon séparé/champi00027.png" id="42_2vmqc"]
+[ext_resource type="Texture2D" uid="uid://t76jlg5kacfx" path="res://Assets/tout les champignon séparé/Champignon plateforme.PNG" id="43_qa7me"]
+[ext_resource type="Texture2D" uid="uid://djslhnpkncd6y" path="res://Assets/tout les champignon séparé/champiplat.PNG" id="44_xbip2"]
+[ext_resource type="Texture2D" uid="uid://rdx8i7ujln7p" path="res://Assets/tout les champignon séparé/champi00020.png" id="45_aivkn"]
+[ext_resource type="Texture2D" uid="uid://ohrusjrqp1j7" path="res://Assets/tout les champignon séparé/champi00021.png" id="46_tnk8p"]
+[ext_resource type="Texture2D" uid="uid://ddh0xbosckc7c" path="res://Assets/tout les champignon séparé/champi00025.png" id="47_o8yl1"]
+[ext_resource type="Texture2D" uid="uid://ccd17o32u1404" path="res://Assets/tout les champignon séparé/champi00026.png" id="48_wy5dt"]
+[ext_resource type="Texture2D" uid="uid://dcopkp10s5lm5" path="res://Assets/tout les champignon séparé/champi00030.png" id="49_yhobw"]
+[ext_resource type="Texture2D" uid="uid://dvsm0r54q6hi8" path="res://Assets/tout les champignon séparé/champisorcier.PNG" id="50_wx4b8"]
+[ext_resource type="Texture2D" uid="uid://1oyleajnxk5a" path="res://Assets/tout les champignon séparé/blobe 5.png" id="51_v1q6u"]
+[ext_resource type="Texture2D" uid="uid://cjkix61vr0cfm" path="res://Assets/tout les champignon séparé/blobe4.png" id="52_tuw2a"]
+[ext_resource type="Texture2D" uid="uid://dfiisb0rumdot" path="res://Assets/tout les champignon séparé/blobe2.png" id="53_aisyq"]
+[ext_resource type="Texture2D" uid="uid://beykvrvegyu74" path="res://Assets/tout les champignon séparé/blobe1.png" id="54_5ndw0"]
 
 [node name="Level1" type="Node2D"]
+
+[node name="MosaiqueDecors1" type="Sprite2D" parent="."]
+position = Vector2(12288, -1336)
+texture = ExtResource("1_6fj87")
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(12208, -1160)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_y5dk6")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -197,7 +237,7 @@ position = Vector2(10280, 2128)
 scale = Vector2(0.3, 0.3)
 
 [node name="StaticBody2D19" parent="." instance=ExtResource("21_p36ya")]
-position = Vector2(9968, 1880)
+position = Vector2(9896, 1872)
 
 [node name="Wall" parent="." instance=ExtResource("7_t4ctn")]
 position = Vector2(12640, 2344)
@@ -253,10 +293,6 @@ position = Vector2(21384, 2424)
 [node name="Wall21" parent="." instance=ExtResource("7_t4ctn")]
 position = Vector2(21384, 1856)
 
-[node name="MaisonChampiClip001" type="Sprite2D" parent="."]
-position = Vector2(19016, 1984)
-texture = ExtResource("23_is1em")
-
 [node name="Wall22" parent="." instance=ExtResource("7_t4ctn")]
 position = Vector2(19992, 1536)
 
@@ -306,11 +342,29 @@ position = Vector2(12264, -1064)
 position = Vector2(12256, -1064)
 texture = ExtResource("18_8ifm4")
 
-[node name="Logo" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(12208, -1160)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("22_y5dk6")
+[node name="StaticBody2D34" parent="." instance=ExtResource("11_2ksfa")]
+position = Vector2(17928, 480)
+
+[node name="StaticBody2D35" parent="." instance=ExtResource("11_2ksfa")]
+position = Vector2(16496, 480)
+
+[node name="StaticBody2D36" parent="." instance=ExtResource("11_2ksfa")]
+position = Vector2(15064, 480)
+
+[node name="StaticBody2D37" parent="." instance=ExtResource("11_2ksfa")]
+position = Vector2(13688, 480)
+
+[node name="Pressure_plate" parent="." instance=ExtResource("24_bl562")]
+position = Vector2(17888, 1168)
+
+[node name="Button" parent="." instance=ExtResource("25_o536w")]
+position = Vector2(21272, 2976)
+
+[node name="ChampiDoor" parent="." instance=ExtResource("26_aainl")]
+position = Vector2(18856, 2288)
+
+[node name="Human" parent="." instance=ExtResource("2_cfeps")]
+position = Vector2(856, -528)
 
 [node name="Alien" parent="." instance=ExtResource("1_8l23y")]
 position = Vector2(3048, 0)
@@ -340,3 +394,415 @@ scale = Vector2(1, 4.52)
 
 [node name="Area2D6" parent="." instance=ExtResource("27_3w25h")]
 position = Vector2(7850, 2905)
+[node name="Champi00003" type="Sprite2D" parent="."]
+position = Vector2(696, 3128)
+texture = ExtResource("28_xrh0h")
+
+[node name="Champi00004" type="Sprite2D" parent="."]
+position = Vector2(1480, 3080)
+texture = ExtResource("29_ntxwt")
+
+[node name="Champi00001" type="Sprite2D" parent="."]
+position = Vector2(2104, 2360)
+texture = ExtResource("30_kc8ex")
+
+[node name="Champi00002" type="Sprite2D" parent="."]
+position = Vector2(2400, 2400)
+texture = ExtResource("31_rqrd0")
+
+[node name="Champi00005" type="Sprite2D" parent="."]
+position = Vector2(5000, 3040)
+texture = ExtResource("32_dkl7t")
+
+[node name="Champi00006" type="Sprite2D" parent="."]
+position = Vector2(5352, 3040)
+texture = ExtResource("32_dkl7t")
+
+[node name="Champi00007" type="Sprite2D" parent="."]
+position = Vector2(4888, 3224)
+texture = ExtResource("33_1kfse")
+
+[node name="Champi00008" type="Sprite2D" parent="."]
+position = Vector2(6416, 3080)
+texture = ExtResource("34_ye0kx")
+
+[node name="Champi08" type="Sprite2D" parent="."]
+position = Vector2(6304, 3128)
+texture = ExtResource("35_mebub")
+
+[node name="Champi00015" type="Sprite2D" parent="."]
+position = Vector2(9440, 3008)
+texture = ExtResource("36_22mro")
+
+[node name="Champi00016" type="Sprite2D" parent="."]
+position = Vector2(8576, 1912)
+texture = ExtResource("37_itbc3")
+
+[node name="Champi00017" type="Sprite2D" parent="."]
+position = Vector2(9456, 2160)
+texture = ExtResource("38_2hnuh")
+
+[node name="Champi00018" type="Sprite2D" parent="."]
+position = Vector2(12504, -1184)
+texture = ExtResource("39_5l23r")
+
+[node name="Champi00019" type="Sprite2D" parent="."]
+position = Vector2(12168, -1000)
+texture = ExtResource("40_jn7m3")
+
+[node name="Champi00031" type="Sprite2D" parent="."]
+position = Vector2(12832, -1072)
+texture = ExtResource("41_rsjfa")
+
+[node name="Champi00027" type="Sprite2D" parent="."]
+position = Vector2(12656, -1064)
+texture = ExtResource("42_2vmqc")
+
+[node name="ChampignonPlateforme" type="Sprite2D" parent="."]
+position = Vector2(12000, 1768)
+texture = ExtResource("43_qa7me")
+
+[node name="Champiplat" type="Sprite2D" parent="."]
+position = Vector2(11632, 1840)
+texture = ExtResource("44_xbip2")
+
+[node name="Champi00020" type="Sprite2D" parent="."]
+position = Vector2(13736, 3088)
+texture = ExtResource("45_aivkn")
+
+[node name="Champi00021" type="Sprite2D" parent="."]
+position = Vector2(13920, 3088)
+texture = ExtResource("45_aivkn")
+
+[node name="Champi00022" type="Sprite2D" parent="."]
+position = Vector2(13448, 3072)
+texture = ExtResource("45_aivkn")
+
+[node name="Champi00023" type="Sprite2D" parent="."]
+position = Vector2(13120, 2976)
+texture = ExtResource("46_tnk8p")
+
+[node name="Champi00025" type="Sprite2D" parent="."]
+position = Vector2(14960, 1400)
+texture = ExtResource("47_o8yl1")
+
+[node name="Champi00026" type="Sprite2D" parent="."]
+position = Vector2(16440, 2952)
+texture = ExtResource("48_wy5dt")
+
+[node name="Champi00028" type="Sprite2D" parent="."]
+position = Vector2(17720, 1040)
+texture = ExtResource("42_2vmqc")
+
+[node name="Champi00030" type="Sprite2D" parent="."]
+position = Vector2(14672, 2968)
+texture = ExtResource("49_yhobw")
+
+[node name="Champisorcier" type="Sprite2D" parent="."]
+position = Vector2(17928, 2368)
+texture = ExtResource("50_wx4b8")
+
+[node name="Champiplat2" type="Sprite2D" parent="."]
+position = Vector2(19512, 2336)
+texture = ExtResource("44_xbip2")
+
+[node name="Champi00009" type="Sprite2D" parent="."]
+position = Vector2(18392, 2424)
+texture = ExtResource("31_rqrd0")
+
+[node name="Champi00010" type="Sprite2D" parent="."]
+position = Vector2(19448, 2368)
+texture = ExtResource("30_kc8ex")
+
+[node name="Champi00011" type="Sprite2D" parent="."]
+position = Vector2(21136, 3136)
+texture = ExtResource("28_xrh0h")
+
+[node name="Champi00012" type="Sprite2D" parent="."]
+position = Vector2(21112, 3080)
+texture = ExtResource("29_ntxwt")
+
+[node name="Champi00013" type="Sprite2D" parent="."]
+position = Vector2(16072, 1976)
+texture = ExtResource("30_kc8ex")
+
+[node name="Blobe5" type="Sprite2D" parent="."]
+position = Vector2(14584, 2984)
+texture = ExtResource("51_v1q6u")
+
+[node name="Blobe4" type="Sprite2D" parent="."]
+position = Vector2(18024, 1648)
+texture = ExtResource("52_tuw2a")
+
+[node name="Blobe2" type="Sprite2D" parent="."]
+position = Vector2(20488, 2088)
+texture = ExtResource("53_aisyq")
+
+[node name="Blobe1" type="Sprite2D" parent="."]
+position = Vector2(19424, 1280)
+texture = ExtResource("54_5ndw0")
+
+[node name="Champi00014" type="Sprite2D" parent="."]
+position = Vector2(14960, 3080)
+texture = ExtResource("29_ntxwt")
+
+[node name="Champi00024" type="Sprite2D" parent="."]
+position = Vector2(4912, -368)
+texture = ExtResource("32_dkl7t")
+
+[node name="Champi00029" type="Sprite2D" parent="."]
+position = Vector2(4880, -336)
+texture = ExtResource("29_ntxwt")
+
+[node name="Champi00032" type="Sprite2D" parent="."]
+position = Vector2(6232, -104)
+texture = ExtResource("38_2hnuh")
+
+[node name="Champi00033" type="Sprite2D" parent="."]
+position = Vector2(6320, -120)
+texture = ExtResource("38_2hnuh")
+
+[node name="Champi00034" type="Sprite2D" parent="."]
+position = Vector2(3712, 120)
+texture = ExtResource("40_jn7m3")
+
+[node name="Champi00035" type="Sprite2D" parent="."]
+position = Vector2(4360, 96)
+texture = ExtResource("40_jn7m3")
+
+[node name="Champi00036" type="Sprite2D" parent="."]
+position = Vector2(4448, -48)
+texture = ExtResource("47_o8yl1")
+
+[node name="Champi00037" type="Sprite2D" parent="."]
+position = Vector2(2912, -56)
+texture = ExtResource("47_o8yl1")
+
+[node name="Champi00038" type="Sprite2D" parent="."]
+position = Vector2(4072, -760)
+texture = ExtResource("45_aivkn")
+
+[node name="StaticBody2D38" parent="." instance=ExtResource("20_iedsw")]
+position = Vector2(568, 3048)
+
+[node name="StaticBody2D39" parent="." instance=ExtResource("20_iedsw")]
+position = Vector2(4560, 3024)
+
+[node name="StaticBody2D40" parent="." instance=ExtResource("20_iedsw")]
+position = Vector2(7496, 2824)
+
+[node name="StaticBody2D41" parent="." instance=ExtResource("20_iedsw")]
+position = Vector2(18280, 2360)
+
+[node name="piti_champi2" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5960, 1560)
+
+[node name="piti_champi3" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5576, 1176)
+
+[node name="piti_champi4" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5960, 384)
+
+[node name="piti_champi5" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5576, 120)
+
+[node name="piti_champi6" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5952, 712)
+
+[node name="piti_champi7" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5576, 568)
+
+[node name="piti_champi8" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5752, 256)
+
+[node name="piti_champi9" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5760, 784)
+
+[node name="piti_champi10" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5760, 1280)
+
+[node name="piti_champi11" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5768, 1752)
+
+[node name="piti_champi12" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5848, 3096)
+
+[node name="piti_champi13" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5680, 3088)
+
+[node name="piti_champi14" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5624, 3088)
+
+[node name="piti_champi15" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5912, 3096)
+
+[node name="piti_champi16" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5568, 3088)
+
+[node name="piti_champi17" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(5984, 3096)
+
+[node name="piti_champi18" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(920, -320)
+
+[node name="piti_champi19" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(776, -16)
+
+[node name="piti_champi20" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(912, 296)
+
+[node name="piti_champi21" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(792, 552)
+
+[node name="piti_champi22" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(920, 784)
+
+[node name="piti_champi23" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(792, 992)
+
+[node name="piti_champi24" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(880, 1256)
+
+[node name="piti_champi25" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(808, 1504)
+
+[node name="piti_champi26" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(920, 3096)
+
+[node name="piti_champi27" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(1000, 3096)
+
+[node name="piti_champi28" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(760, 3088)
+
+[node name="piti_champi29" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(680, 3088)
+
+[node name="piti_champi30" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(1088, 3096)
+
+[node name="piti_champi31" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(1816, 3088)
+
+[node name="piti_champi32" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(2240, 3096)
+
+[node name="piti_champi33" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(2672, 3096)
+
+[node name="piti_champi34" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(3064, 3096)
+
+[node name="piti_champi35" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(3504, 3096)
+
+[node name="piti_champi36" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(7128, 3024)
+
+[node name="piti_champi37" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(8480, 2904)
+
+[node name="piti_champi38" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(9656, 3104)
+
+[node name="piti_champi39" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(9752, 3104)
+
+[node name="piti_champi40" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(10696, 2256)
+
+[node name="piti_champi41" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(10968, 2472)
+
+[node name="piti_champi42" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(9808, 1816)
+
+[node name="StaticBody2D42" parent="." instance=ExtResource("20_iedsw")]
+position = Vector2(9088, 1904)
+
+[node name="piti_champi43" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11128, 1472)
+
+[node name="piti_champi44" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11584, 1920)
+
+[node name="piti_champi45" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(13152, 3096)
+
+[node name="piti_champi46" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(13232, 3096)
+
+[node name="piti_champi47" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12848, 3088)
+
+[node name="piti_champi48" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(14680, 3096)
+
+[node name="piti_champi49" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(19176, 2456)
+
+[node name="piti_champi50" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(18016, 1168)
+
+[node name="piti_champi51" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(17752, 1168)
+
+[node name="piti_champi52" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(16696, 1640)
+
+[node name="piti_champi53" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(15960, 2072)
+
+[node name="piti_champi54" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(16632, 672)
+
+[node name="piti_champi55" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(15736, 1096)
+
+[node name="piti_champi56" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(14952, 1576)
+
+[node name="piti_champi57" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(15008, 2576)
+
+[node name="piti_champi58" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(14056, 2136)
+
+[node name="piti_champi59" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12456, 952)
+
+[node name="piti_champi60" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11928, 616)
+
+[node name="piti_champi61" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12456, 576)
+
+[node name="piti_champi62" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12152, 192)
+
+[node name="piti_champi63" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12248, -80)
+
+[node name="piti_champi64" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12152, -296)
+
+[node name="piti_champi65" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12240, -616)
+
+[node name="piti_champi66" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11936, -944)
+
+[node name="piti_champi67" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11888, -944)
+
+[node name="piti_champi68" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12464, -928)
+
+[node name="piti_champi69" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12544, -928)
+
+[node name="piti_champi70" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(11832, -952)
+
+[node name="piti_champi71" parent="." instance=ExtResource("22_lsg66")]
+position = Vector2(12632, -936)

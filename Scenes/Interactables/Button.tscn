@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnvrm7xwf4ivc"]
 
-[ext_resource type="Texture2D" uid="uid://dv76vp6l72tk8" path="res://icon.svg" id="1_1cofu"]
 [ext_resource type="Script" path="res://Scripts/Button.gd" id="1_hvea3"]
+[ext_resource type="Texture2D" uid="uid://dmlpnpxetw80q" path="res://Assets/objet/objet00000 (copie).png" id="2_dvj6h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cr6mf"]
 size = Vector2(100, 26)
@@ -13,9 +13,10 @@ script = ExtResource("1_hvea3")
 shape = SubResource("RectangleShape2D_cr6mf")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
-[node name="Sprite" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_1cofu")
+[node name="Objet00000(copie)" type="Sprite2D" parent="."]
+position = Vector2(8, 16)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_dvj6h")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
