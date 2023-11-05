@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://rtetnt1veubk"]
+
+[ext_resource type="Texture2D" uid="uid://d3ktadru5hf5w" path="res://Assets/Couloir vertical/fin couloir/6.png" id="1_su1ye"]
+
+[node name="6" type="Sprite2D"]
+position = Vector2(307, 131)
+scale = Vector2(1000, 1000)
+texture = ExtResource("1_su1ye")

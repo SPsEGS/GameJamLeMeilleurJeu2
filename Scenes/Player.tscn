@@ -16,6 +16,7 @@ texture = ExtResource("2_14w52")
 shape = SubResource("RectangleShape2D_m10ex")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
 limit_left = 0
 limit_bottom = 3200
 position_smoothing_enabled = true

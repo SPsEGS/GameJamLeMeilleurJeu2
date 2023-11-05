@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cedomn0syqox4"]
+
+[ext_resource type="Texture2D" uid="uid://dxy0g1cixq6am" path="res://Assets/tunelle/miulieu/couloir humain milieucomplet_Clip_001.png" id="1_6wgea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igwm1"]
+size = Vector2(1432, 264)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr4fk"]
+size = Vector2(1433, 512)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6wgea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 300)
+shape = SubResource("RectangleShape2D_igwm1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-4.5, -216)
+shape = SubResource("RectangleShape2D_tr4fk")

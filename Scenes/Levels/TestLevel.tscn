@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="1_kgbgo"]
 [ext_resource type="PackedScene" uid="uid://dxww3htj70b5o" path="res://Scenes/Environment/Wall.tscn" id="2_4lqbp"]
-[ext_resource type="PackedScene" uid="uid://cqoi6d4l3w2dl" path="res://Scenes/Environment/Ceiling.tscn" id="3_cghvi"]
-[ext_resource type="PackedScene" uid="uid://c3oommgjqix5" path="res://Scenes/Environment/Floor.tscn" id="4_ri4jy"]
+[ext_resource type="PackedScene" uid="uid://cqoi6d4l3w2dl" path="res://Scenes/Environment/Garbage/Ceiling.tscn" id="3_cghvi"]
+[ext_resource type="PackedScene" uid="uid://c3oommgjqix5" path="res://Scenes/Environment/Garbage/Floor.tscn" id="4_ri4jy"]
 [ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="5_yromd"]
 [ext_resource type="PackedScene" uid="uid://mqgijtj8svds" path="res://Scenes/Environment/Platform.tscn" id="6_r1rir"]
 [ext_resource type="PackedScene" uid="uid://cd00ekufkeovm" path="res://Scenes/Environment/Ground.tscn" id="7_k18jb"]

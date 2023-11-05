@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba16txnm0n3gc"]
+
+[ext_resource type="PackedScene" uid="uid://cqoi6d4l3w2dl" path="res://Scenes/Environment/Garbage/Ceiling.tscn" id="1_816pl"]
+
+[node name="Area2D" instance=ExtResource("1_816pl")]

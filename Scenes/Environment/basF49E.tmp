@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtcveji3kq61i"]
+
+[ext_resource type="Texture2D" uid="uid://dt2qc3sd5orx2" path="res://Assets/Couloir vertical/fin couloir/3.png" id="1_v1k6r"]
+[ext_resource type="Texture2D" uid="uid://cjuuk85yrh4u8" path="res://Assets/Couloir vertical/fin couloir/2.png" id="2_h0pmg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7ipo"]
+size = Vector2(588.5, 197.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bh1a"]
+size = Vector2(444, 198)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("1_v1k6r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_h0pmg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(412.25, 330.75)
+shape = SubResource("RectangleShape2D_w7ipo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-499, 331)
+shape = SubResource("RectangleShape2D_8bh1a")

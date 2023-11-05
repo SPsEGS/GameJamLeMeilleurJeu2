@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://da4uql80e86w2"]
+
+[ext_resource type="Texture2D" uid="uid://c8druct0x4sv7" path="res://Assets/tunelle/debut/tunelle humain entré_Clip_007.png" id="1_35fwx"]
+[ext_resource type="Texture2D" uid="uid://c21csrqi4riys" path="res://Assets/tunelle/debut/tunelle humain entré_Clip_008.png" id="2_rlsf3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gl7dl"]
+size = Vector2(488, 512)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_owymp"]
+size = Vector2(488.25, 264)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("1_35fwx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rlsf3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(468, -216)
+shape = SubResource("RectangleShape2D_gl7dl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(467.875, 300)
+shape = SubResource("RectangleShape2D_owymp")

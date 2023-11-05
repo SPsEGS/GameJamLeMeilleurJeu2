@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcnbsb6cbuw08"]
+
+[ext_resource type="Texture2D" uid="uid://c4mj7w7t8puew" path="res://Assets/Couloir vertical/millieu couloir/couloir verticalecomplet_Clip_001.png" id="1_dx3jr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5drhj"]
+size = Vector2(576, 894)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smta7"]
+size = Vector2(457, 894)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dx3jr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(424, -23)
+shape = SubResource("RectangleShape2D_5drhj")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-492.5, -23)
+shape = SubResource("RectangleShape2D_smta7")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://rcsqqnt1qr07"]
+
+[ext_resource type="Texture2D" uid="uid://ds6p6ym1swkvb" path="res://Assets/objet/objeqt.png" id="1_thn12"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_obj1y"]
+radius = 119.129
+height = 1052.65
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fct8"]
+size = Vector2(205, 141)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Objeqt" type="Sprite2D" parent="."]
+texture = ExtResource("1_thn12")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-56, 64)
+rotation = -2.31257
+shape = SubResource("CapsuleShape2D_obj1y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(344, -257.5)
+shape = SubResource("RectangleShape2D_4fct8")

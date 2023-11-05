@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://br0cntm1373b2"]
+
+[ext_resource type="Texture2D" uid="uid://cl2b1idsnw1ga" path="res://Assets/Couloir vertical/debut couloir/2.png" id="1_k0121"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_f38d4"]
+a = Vector2(-728, 256)
+b = Vector2(704, 256)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k0121")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -24)
+shape = SubResource("SegmentShape2D_f38d4")

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/GameView.gd" id="1_p222q"]
 [ext_resource type="PackedScene" uid="uid://dp6ro04p3u1mj" path="res://Scenes/Sounds/MainSoundAmbiance.tscn" id="2_rfjdo"]
 [ext_resource type="PackedScene" uid="uid://dhittpm2ye21t" path="res://Scenes/Parallax.tscn" id="3_5u603"]
-[ext_resource type="PackedScene" uid="uid://dlbw67oxmpdvx" path="res://Scenes/Levels/TestLevel.tscn" id="3_dyf33"]
+[ext_resource type="PackedScene" uid="uid://bx8mol0ux0cxj" path="res://Scenes/Levels/Level1.tscn" id="3_b2ju0"]
 
 [node name="GameView" type="Node"]
 script = ExtResource("1_p222q")
@@ -29,13 +29,13 @@ render_target_update_mode = 4
 
 [node name="ParallaxBackground" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_5u603")]
 
+[node name="Node2D" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_b2ju0")]
+
 [node name="Camera2D2" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
 limit_left = 0
 limit_bottom = 3200
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
-
-[node name="Node2D" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_dyf33")]
 
 [node name="SubViewportContainer2" type="SubViewportContainer" parent="HBoxContainer"]
 layout_mode = 2

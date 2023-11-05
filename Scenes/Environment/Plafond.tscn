@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://gxax341i0h5g"]
+
+[ext_resource type="Texture2D" uid="uid://2k05jlq4v4he" path="res://Assets/Couloir vertical/fin couloir/1.png" id="1_n0bwa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ngxl0"]
+size = Vector2(1432, 112)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n0bwa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, -416)
+shape = SubResource("RectangleShape2D_ngxl0")
