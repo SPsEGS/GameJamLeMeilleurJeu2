@@ -5,11 +5,13 @@ class_name Alien
 # Exported
 @export var grapple_max_distance = 10000
 @export var grapple_reaction_strength : float = 1000
-@export var grapple_reel_speed : float = 5
+@export var grapple_reel_speed : float = 200
 
 # Node references
 @onready var raycast : RayCast2D = get_node("GrappleRaycast")
 @onready var grapple_line : Line2D = get_node("GrappleLine")
+@onready var sprite : Sprite2D = get_node("Sprite2D")
+@onready var animation : AnimationPlayer = get_node("AnimationPlayer")
 
 # Global variables
 var grapple_point : Vector2
@@ -29,6 +31,7 @@ func _ready():
 func _process(delta):
 	grapple_line.set_point_position(1, grapple_point - position)
 	input_loop()
+	animation_loop()
 	
 	if(grapple_is_attached):
 		grapple_move(delta)
@@ -70,7 +73,7 @@ func grapple_move(delta: float):
 	var current_distance : float = position.distance_to(grapple_point)
 	var stretch_factor : float = current_distance - grapple_target_distance
 
-	grapple_target_distance -= grapple_reel_speed
+	grapple_target_distance -= grapple_reel_speed * delta
 	
 	var pull_vector : Vector2
 	if stretch_factor <= 0:
@@ -81,11 +84,25 @@ func grapple_move(delta: float):
 	velocity += pull_vector * delta
 	velocity.y += gravity * delta
 	move_and_slide()
+
+func animation_loop():
+	if abs(velocity.x) < 100:
+		if grapple_is_attached:
+			animation.play("grapple_R")
+		else:
+			animation.play("idle")
+		
+	elif velocity.x > 100:
+		if grapple_is_attached:
+			animation.play("grapple_R")
+		else:
+			animation.play("walk_R")
+	elif velocity.x < 100:
+		if grapple_is_attached:
+			animation.play("grapple_L")
+		else:
+			animation.play("walk_L")
 	
 func ded():
 	position.x = 7200
 	position.y = 2500
-	
-	
-	
-	

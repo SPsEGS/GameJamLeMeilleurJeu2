@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlbw67oxmpdvx"]
+[gd_scene load_steps=13 format=3 uid="uid://dlbw67oxmpdvx"]
 
 [ext_resource type="PackedScene" uid="uid://b27247h5uin5o" path="res://Scenes/Human.tscn" id="1_kgbgo"]
 [ext_resource type="PackedScene" uid="uid://dxww3htj70b5o" path="res://Scenes/Environment/Wall.tscn" id="2_4lqbp"]
@@ -7,11 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="5_yromd"]
 [ext_resource type="PackedScene" uid="uid://mqgijtj8svds" path="res://Scenes/Environment/Platform.tscn" id="6_r1rir"]
 [ext_resource type="PackedScene" uid="uid://cd00ekufkeovm" path="res://Scenes/Environment/Ground.tscn" id="7_k18jb"]
+[ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="8_3y4cb"]
 [ext_resource type="PackedScene" uid="uid://ndx7tb66mqpd" path="res://Scenes/Interactables/Pressure_plate.tscn" id="8_7scja"]
 [ext_resource type="PackedScene" uid="uid://dnvrm7xwf4ivc" path="res://Scenes/Interactables/Button.tscn" id="9_62xkc"]
-[ext_resource type="PackedScene" uid="uid://cevrp1jb8acus" path="res://Scenes/Interactables/ChampiDoor.tscn" id="10_h16uk"]
-[ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="8_3y4cb"]
 [ext_resource type="PackedScene" uid="uid://depg4v841sh1x" path="res://Scenes/Sounds/Harmo2.tscn" id="9_baax8"]
+[ext_resource type="PackedScene" uid="uid://cevrp1jb8acus" path="res://Scenes/Interactables/ChampiDoor.tscn" id="10_h16uk"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -86,6 +86,7 @@ position = Vector2(517, 303)
 
 [node name="Alien" parent="." instance=ExtResource("5_yromd")]
 position = Vector2(282, 296)
+grapple_reel_speed = 200.0
 
 [node name="Pressure_plate" parent="." instance=ExtResource("8_7scja")]
 position = Vector2(746, 3153)
