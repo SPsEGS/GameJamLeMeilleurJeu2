@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp6ro04p3u1mj"]
+
+[ext_resource type="Script" path="res://Scripts/MainSoundAmbiance.gd" id="1_nbyyn"]
+[ext_resource type="AudioStream" uid="uid://b3y8e5bgn82fj" path="res://Assets/Audio/son_dambiance.mp3" id="2_eq11r"]
+[ext_resource type="AudioStream" uid="uid://7h6ardudqv6o" path="res://Assets/Audio/Dring.wav" id="3_g3pua"]
+[ext_resource type="AudioStream" uid="uid://xa4e14pbi7qt" path="res://Assets/Audio/Drong.wav" id="4_12g3h"]
+
+[node name="MainSoundAmbiance" type="Node"]
+script = ExtResource("1_nbyyn")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_eq11r")
+volume_db = -19.339
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.0
+autostart = true
+
+[node name="Dring" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_g3pua")
+
+[node name="Drong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_12g3h")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

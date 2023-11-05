@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://t82nvnf618vi"]
+
+[ext_resource type="PackedScene" uid="uid://dgn2ahmlsc8x5" path="res://Scenes/Sounds/Sound_player.tscn" id="1_74ytk"]
+[ext_resource type="AudioStream" uid="uid://bidwra2d2rtbb" path="res://Assets/Audio/Harmo_01.wav" id="2_ok5og"]
+
+[node name="Area2D" instance=ExtResource("1_74ytk")]
+
+[node name="AudioStreamPlayer" parent="." index="1"]
+stream = ExtResource("2_ok5og")

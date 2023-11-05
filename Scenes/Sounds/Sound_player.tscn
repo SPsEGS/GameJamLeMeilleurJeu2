@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgn2ahmlsc8x5"]
+
+[ext_resource type="Script" path="res://Scripts/Sound_player.gd" id="1_ir0vd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxi00"]
+size = Vector2(16, 94)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ir0vd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bxi00")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
