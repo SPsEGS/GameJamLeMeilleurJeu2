@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://ceggqrj1fluc8"]
+
+[ext_resource type="Texture2D" uid="uid://dep1ci8a4x7qi" path="res://Assets/Tilemap/Tile.png" id="1_b0wd7"]
+[ext_resource type="Texture2D" uid="uid://dmu0kmbl6adkb" path="res://Assets/Tilemap/Tile_champi.png" id="2_6wqjg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6jev"]
+resource_name = "Tile"
+texture = ExtResource("1_b0wd7")
+margins = Vector2i(577, 440)
+texture_region_size = Vector2i(331, 292)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-165.5, -146, 165.5, -146, 165.5, 146, -165.5, 146)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_532eo"]
+resource_name = "Champi"
+texture = ExtResource("2_6wqjg")
+margins = Vector2i(577, 440)
+texture_region_size = Vector2i(331, 292)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-165.5, -146, 165.5, -146, 165.5, 146, -165.5, 146)
+
+[resource]
+tile_size = Vector2i(331, 292)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_o6jev")
+sources/1 = SubResource("TileSetAtlasSource_532eo")
