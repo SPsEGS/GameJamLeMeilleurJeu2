@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d1p1ou1caodc4" path="res://Assets/Blocks/Platforms/Platform_Blue.PNG" id="1_uue1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjr8m"]
-size = Vector2(709.82, 153.99)
+size = Vector2(709.82, 77.495)
 
 [node name="Platform" type="StaticBody2D"]
 
@@ -12,5 +12,5 @@ texture = ExtResource("1_uue1p")
 offset = Vector2(-59.905, 192.19)
 
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 65.5)
+position = Vector2(-2, 27.2525)
 shape = SubResource("RectangleShape2D_gjr8m")
