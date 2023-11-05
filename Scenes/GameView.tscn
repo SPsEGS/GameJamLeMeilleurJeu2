@@ -27,6 +27,8 @@ render_target_update_mode = 4
 [node name="ParallaxBackground" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_5u603")]
 
 [node name="Camera2D2" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
+limit_left = 0
+limit_bottom = 3200
 position_smoothing_enabled = true
 
 [node name="Node2D" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("3_dyf33")]
@@ -44,3 +46,6 @@ render_target_update_mode = 4
 [node name="ParallaxBackground" parent="HBoxContainer/SubViewportContainer2/SubViewport" instance=ExtResource("3_5u603")]
 
 [node name="Camera2D2" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport"]
+limit_left = 0
+limit_bottom = 3200
+position_smoothing_enabled = true
