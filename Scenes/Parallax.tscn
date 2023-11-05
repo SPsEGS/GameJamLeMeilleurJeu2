@@ -47,7 +47,6 @@ texture = ExtResource("3_fgwkc")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.4, 1)
 motion_mirroring = Vector2(1425.21, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]

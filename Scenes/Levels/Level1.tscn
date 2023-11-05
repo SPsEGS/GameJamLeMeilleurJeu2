@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bx8mol0ux0cxj"]
+[gd_scene load_steps=58 format=3 uid="uid://bx8mol0ux0cxj"]
 
 [ext_resource type="Texture2D" uid="uid://d3v8iyxxhkjj5" path="res://Assets/mosaique decors 1.png" id="1_6fj87"]
 [ext_resource type="PackedScene" uid="uid://bk5cwt3kdigr7" path="res://Scenes/Alien.tscn" id="1_8l23y"]
@@ -24,13 +24,12 @@
 [ext_resource type="PackedScene" uid="uid://beitm62rsw4hw" path="res://Scenes/Environment/miniPlat.tscn" id="21_p36ya"]
 [ext_resource type="PackedScene" uid="uid://bv4xggjtrwwke" path="res://Scenes/Petit_champi.tscn" id="22_lsg66"]
 [ext_resource type="Texture2D" uid="uid://s06cu58ynw16" path="res://Assets/compo acide/logo.PNG" id="22_y5dk6"]
-[ext_resource type="Texture2D" uid="uid://bpd0t4i6wdyhv" path="res://Assets/animation maison champi/maison champi_Clip_001.png" id="23_is1em"]
-[ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="25_e3i75"]
-[ext_resource type="PackedScene" uid="uid://depg4v841sh1x" path="res://Scenes/Sounds/Harmo2.tscn" id="26_nk4kj"]
-[ext_resource type="PackedScene" uid="uid://dgvo580rln3m2" path="res://Scenes/Acide.tscn" id="27_3w25h"]
 [ext_resource type="PackedScene" uid="uid://ndx7tb66mqpd" path="res://Scenes/Interactables/Pressure_plate.tscn" id="24_bl562"]
+[ext_resource type="PackedScene" uid="uid://t82nvnf618vi" path="res://Scenes/Sounds/Harmo1.tscn" id="25_e3i75"]
 [ext_resource type="PackedScene" uid="uid://dnvrm7xwf4ivc" path="res://Scenes/Interactables/Button.tscn" id="25_o536w"]
 [ext_resource type="PackedScene" uid="uid://cevrp1jb8acus" path="res://Scenes/Interactables/ChampiDoor.tscn" id="26_aainl"]
+[ext_resource type="PackedScene" uid="uid://depg4v841sh1x" path="res://Scenes/Sounds/Harmo2.tscn" id="26_nk4kj"]
+[ext_resource type="PackedScene" uid="uid://dgvo580rln3m2" path="res://Scenes/Acide.tscn" id="27_3w25h"]
 [ext_resource type="Texture2D" uid="uid://b5357j106sve7" path="res://Assets/tout les champignon séparé/champi00003.png" id="28_xrh0h"]
 [ext_resource type="Texture2D" uid="uid://8imcwv1xokxm" path="res://Assets/tout les champignon séparé/champi00004.png" id="29_ntxwt"]
 [ext_resource type="Texture2D" uid="uid://bv1wmpawax6mf" path="res://Assets/tout les champignon séparé/champi00001.png" id="30_kc8ex"]
@@ -360,17 +359,16 @@ position = Vector2(17888, 1168)
 [node name="Button" parent="." instance=ExtResource("25_o536w")]
 position = Vector2(21272, 2976)
 
-[node name="ChampiDoor" parent="." instance=ExtResource("26_aainl")]
+[node name="ChampiDoor" parent="." node_paths=PackedStringArray("button", "pressure_plate") instance=ExtResource("26_aainl")]
 position = Vector2(18856, 2288)
+button = NodePath("../Button")
+pressure_plate = NodePath("../Pressure_plate")
 
 [node name="Human" parent="." instance=ExtResource("2_cfeps")]
 position = Vector2(856, -528)
 
 [node name="Alien" parent="." instance=ExtResource("1_8l23y")]
 position = Vector2(3048, 0)
-
-[node name="Human" parent="." instance=ExtResource("2_cfeps")]
-position = Vector2(856, -528)
 
 [node name="Area2D" parent="." instance=ExtResource("25_e3i75")]
 position = Vector2(3924, 3036)
@@ -394,6 +392,7 @@ scale = Vector2(1, 4.52)
 
 [node name="Area2D6" parent="." instance=ExtResource("27_3w25h")]
 position = Vector2(7850, 2905)
+
 [node name="Champi00003" type="Sprite2D" parent="."]
 position = Vector2(696, 3128)
 texture = ExtResource("28_xrh0h")
